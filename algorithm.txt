@@ -1,0 +1,37 @@
+Algoritm:
+
+Flow chart:
+	1) Starts in int main()
+	2) Need to pass two pointers to Player A function and Player Bs function
+	3) Values are changed and then passed to printPosition
+
+
+Steps:
+	1)Introduction
+	2)Get time
+	3)Make two variables initialized to zero so it can be passed in by reference
+	4) WhilePass the two variables in corresponding player function 
+	5)Value of zero gets passed
+	6)Generate random number 
+	7)Figure out what range of numbers equals what probability
+		a)So I took like 20%, and multiplied 0.2 by 50 to get how many spaces would equal that obstacle
+	8) Create a conditional for each probability
+	9) Move each pointer in corresponding direction, left or right using + and -
+		a) Create a condition where if the position is less than one, the pointer gets reset to position 1
+		b) Create another condition where the pointer value goes over 50, then it just resets back to 50
+	10) Pass that pointer value to printPosition so it can display it
+	11) If both pointers equal the same value, then move Player A’s position back one by subtracting one
+	12) If player A’s position is bigger than B’s, then print A at its pointer value
+		a) Then print B’s value by subtracting A’s value from it
+	13) Do vice versa for Player B
+
+
+Also:
+	1) To make the program run again, put it in a while loop where it keeps running if the player says yes
+	2) Use setw from <iomanip> to put spaces between both Player letters
+
+
+Then to see who won:
+	1) When one of the players gets to the value 50, and the race ends, see which value of which player is bigger
+		a) If A’s is bigger, than say you won
+		b) If B’s is bigger, then say try harder
